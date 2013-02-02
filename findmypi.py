@@ -32,7 +32,7 @@ def get_ifconfig():
 
 def send_mail(settings, BODY):
     try:
-        server = smtplib.SMTP('smtp.gmail.com:587')
+        server = smtplib.SMTP(settings.server)
         server.starttls()
         server.login(settings.username, settings.password)
         server.sendmail(settings.fromaddr, settings.toaddr, BODY)

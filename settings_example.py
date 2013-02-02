@@ -1,7 +1,8 @@
-# Settings
-fromaddr = 'yourgoogleaccount@googlemail.com'
+# Email details
+fromaddr = 'youremailaddress@somedomain.com'
 toaddr = 'youremailaddress@somedomain.com'
 
-# Googlemail login details
-username = 'type your googlemail username here'
-password = 'type your googlemail password here'
+# Email account details
+server = 'smtp.gmail.com:587'
+username = 'type your email username here'
+password = 'type your email password here'
