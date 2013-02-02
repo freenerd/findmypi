@@ -22,7 +22,7 @@ import settings
 
 def get_ifconfig():
     output_if = subprocess.Popen(['ifconfig'], stdout=subprocess.PIPE).communicate()[0]
-    
+
     # ifconfig will always have at least 'lo loopback' as match for inet addr
     # thus we want to find more than one interface with IP
     if (len(re.findall("inet addr", output_if)) > 1):
