@@ -53,7 +53,7 @@ You will probably want to have this script be executed on startup
   sudo nano /etc/rc.local
 
   # add to the bottom just before 'exit 0'
-  python /home/pi/findmypi/findmypi.py
+  python /home/pi/findmypi/findmypi.py &
   ```
 
 Restart your Pi and wait for the email
